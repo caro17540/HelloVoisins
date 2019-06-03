@@ -19,9 +19,9 @@ class CreateTransactionTable extends Migration
 			$table->bigInteger('id_user2');
 			$table->bigInteger('id_skill1');
 			$table->bigInteger('id_skill2');
-			$table->enum('status1', ['ET', 'TT']);
-			$table->enum('status2', ['ET', 'TT']);
-			$table->enum('status', ['AR', 'AC', 'R', 'V', 'T']);
+			$table->string('status1', 5);
+			$table->string('status2', 5);
+			$table->string('status', 5);
             $table->timestamps();
         });
     }
