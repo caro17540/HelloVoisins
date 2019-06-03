@@ -18,4 +18,20 @@ class Skill extends Model
 	*/
 	protected $primaryKey = 'id';
 	
+	/**
+	* the primary key associated with the table
+	* @var string 
+	*/
+	protected $fillable = ['title'];
+	
+	public function transaction1{
+		
+		return $this->belongsTo('App\Transaction','id_skill1';
+	}
+	
+	public function transaction2{
+		
+		return $this->belongsTo('App\Transaction','id_skill2';
+	}
+	
 }
