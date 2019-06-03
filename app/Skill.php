@@ -24,14 +24,19 @@ class Skill extends Model
 	*/
 	protected $fillable = ['title'];
 	
-	public function transaction1{
+	public function transaction1() {
 		
-		return $this->hasMany('App\Transaction','id_skill1';
+		return $this->hasMany('App\Transaction','id_skill1');
 	}
 	
-	public function transaction2{
+	public function transaction2() {
 		
-		return $this->hasMany('App\Transaction','id_skill2';
+		return $this->hasMany('App\Transaction','id_skill2');
+	}
+	
+	public function users() {
+		
+		return $this->belongsToMany('App\User');
 	}
 	
 }
