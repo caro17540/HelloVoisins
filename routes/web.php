@@ -11,10 +11,24 @@
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/' , 'HomeController@index')->name('home');
+Route::get('/account'/,'AccountController@form');
+Route::post('account', 'AccountController@update');
+Route:: post('/users',UserController@list');
+Route::get('/transactions' , 'transactionController@list');
+Route::get('/user{n}' , 'userController@read');
+Route::get('/transactions' , 'transactionController@list');
+Route::get('/user{n}' , 'userController@read');
+Route::get('/skills', 'SkillController@list');
+Route::get('skill/create','!SkillController@form');
+Route::get('/skill/upate/{n}','SkillController@form');
+Route::get('/skill/update/{n}',SkillController@update');
+
