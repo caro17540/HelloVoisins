@@ -28,8 +28,8 @@ class CreateUserSkillTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_skill');
-		$table->dropForeign([id_user]);
+        $table->dropForeign([id_user]);
 		$table->dropForeign([id_skill]);
+		Schema::dropIfExists('user_skill');
     }
 }
