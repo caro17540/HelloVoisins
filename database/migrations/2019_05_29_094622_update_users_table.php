@@ -19,6 +19,7 @@ class UpdateUsersTable extends Migration
 			$table->string('firstname');
 			$table->string('lastname');
 			$table->longText('description');
+			$table->string('role', 5);
         });
     }
 
@@ -32,7 +33,7 @@ class UpdateUsersTable extends Migration
         Schema::table('users', function (Blueprint $table) {
             //
 			 $table->renameColumn('name', 'login');
-			 $table->dropColumn(['firstname','lastname','description']);
+			 $table->dropColumn(['firstname','lastname','description','role']);
         });
     }
 }
