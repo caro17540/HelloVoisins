@@ -6,5 +6,13 @@ use Illuminate\Http\Request;
 
 class AccountController extends Controller
 {
-    //
+    public function form()
+	{
+		; 
+	}
+	
+	public function update()
+	{
+		;
+	}
 }
