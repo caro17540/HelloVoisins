@@ -28,6 +28,6 @@ Route::get('/transactions', 'TransactionController@list');
 Route::get('/transaction/{n}', 'TransactionController@read');
 Route::get('/skills', 'SkillController@list');
 Route::get('/skill/create', 'SkillController@form');
-Route::get('/skill/update/{n}', 'SkillController@form');
+Route::get('/skill/update/{n}', 'SkillController@updateForm');
 Route::post('/skill/update/{n}', 'SkillController@update');
 
