@@ -11,17 +11,7 @@ class TransactionController extends Controller
 		//
 	}
 	
-	public function form()
-	{
-		//
-	}
-	
-	public function updateForm($n)
-	{
-		//
-	}
-	
-	public function update($n)
+	public function read($n)
 	{
 		//
 	}
