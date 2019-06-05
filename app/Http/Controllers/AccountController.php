@@ -8,11 +8,9 @@ class AccountController extends Controller
 {
     public function form()
 	{
-		; 
 	}
 	
 	public function update()
 	{
-		;
 	}
 }
