@@ -23,11 +23,11 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/account', 'AccountController@form');
 Route::post('/account', 'AccountController@update');
 Route::get('/users', 'UserController@list');
-Route::get('/user/{n}', 'UserController@read');
+Route::get('/user/{n}', 'UserController@read')->where('n','[0-9]+');
 Route::get('/transactions', 'TransactionController@list');
-Route::get('/transaction/{n}', 'TransactionController@read');
+Route::get('/transaction/{n}', 'TransactionController@read')->where('n','[0-9]+');
 Route::get('/skills', 'SkillController@list');
 Route::get('/skill/create', 'SkillController@form');
-Route::get('/skill/update/{n}', 'SkillController@updateForm');
-Route::post('/skill/update/{n}', 'SkillController@update');
+Route::get('/skill/update/{n}', 'SkillController@updateForm')->where('n','[0-9]+');
+Route::post('/skill/update/{n}', 'SkillController@update')->where('n','[0-9]+');
 

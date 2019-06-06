@@ -6,15 +6,14 @@ use Illuminate\Http\Request;
 
 class TransactionController extends Controller
 {
-    //
-
-	public function list() { 
-
+	public function list()
+	{
+		//
 	}
-
-	public function read($n) {
-		
+	
+	public function read($n)
+	{
+		//
 	}
-
 }
 	
