@@ -14,13 +14,20 @@ class AccountController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
-	}
-	
-    public function form()
-	{
-	}
-	
-	public function update()
-	{
-	}
+    }
+
+        public function form()
+        {
+                return view('account_form');
+        }
+
+        public function update()
+        {
+                return view('account_update');
+        }
+
+        public function delete()
+        {
+                return view('account_delete');
+        }
 }

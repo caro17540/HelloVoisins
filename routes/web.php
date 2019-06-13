@@ -20,8 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/account', 'AccountController@form');
+Route::get('/account', 'AccountController@form')->name('account');
 Route::post('/account', 'AccountController@update');
+Route::get('/account/delete', 'AccountController@delete')->name('account_delete');
 Route::get('/users', 'UserController@list');
 Route::get('/user/{n}', 'UserController@read')->where('n','[0-9]+');
 Route::get('/transactions', 'TransactionController@list');
