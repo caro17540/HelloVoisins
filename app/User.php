@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace HelloVoisins;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -39,31 +39,31 @@ class User extends Authenticatable
 	
 	public function messagesSender(){
 		
-		return $this->hasMany('App\Message','id_sender');
+		return $this->hasMany('HelloVoisins\Message','id_sender');
 		
 	}
 	
 	public function messagesReceiver(){
 		
-		return $this->hasMany('App\Message','id_receiver');
+		return $this->hasMany('HelloVoisins\Message','id_receiver');
 		
 	}
 	
 	public function transactions1(){
 		
-		return $this->hasMany('App\Message','id_user1');
+		return $this->hasMany('HelloVoisins\Message','id_user1');
 		
 	}
 	
 	public function transactions2(){
 		
-		return $this->hasMany('App\Message','id_user2');
+		return $this->hasMany('HelloVoisins\Message','id_user2');
 		
 	}
 	
 	public function skills(){
 		
-		return $this->belongsToMany('App\Skill','user_skill','id_user','id_skill');
+		return $this->belongsToMany('HelloVoisins\Skill','user_skill','id_user','id_skill');
 		
 	}
 	

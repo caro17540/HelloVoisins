@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace HelloVoisins;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,14 +12,14 @@ class Message extends Model
 
     public function messageTransaction()
     {
-        return $this->belongsTo('App\Transaction', 'id_transaction');
+        return $this->belongsTo('HelloVoisins\Transaction', 'id_transaction');
     }
     public function userSender()
     {
-        return $this->belongsTo('App\User', 'id_sender');
+        return $this->belongsTo('HelloVoisins\User', 'id_sender');
     }
     public function userReceiver()
     {
-        return $this->belongsTo('App\User', 'id_receiver');
+        return $this->belongsTo('HelloVoisins\User', 'id_receiver');
     }
 }

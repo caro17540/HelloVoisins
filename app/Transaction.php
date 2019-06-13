@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace HelloVoisins;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -33,7 +33,7 @@ class Transaction extends Model
 	 */
 	public function user1()
 	{
-			return $this->belongsTo('App\User', 'id_user1', 'id');
+			return $this->belongsTo('HelloVoisins\User', 'id_user1', 'id');
 	}
 			
 	/**
@@ -42,7 +42,7 @@ class Transaction extends Model
 	 */
 	public function user2()
 	{
-			return $this->belongsTo('App\User', 'id_user2', 'id');
+			return $this->belongsTo('HelloVoisins\User', 'id_user2', 'id');
 	}
 	
 	/**
@@ -51,7 +51,7 @@ class Transaction extends Model
 	 */
 	public function skill1()
 	{
-			return $this->belongsTo('App\Skill', 'id_skill1', 'id');
+			return $this->belongsTo('HelloVoisins\Skill', 'id_skill1', 'id');
 	}
 			
 	/**
@@ -60,7 +60,7 @@ class Transaction extends Model
 	 */
 	public function skill2()
 	{
-			return $this->belongsTo('App\Skill', 'id_skill2', 'id');
+			return $this->belongsTo('HelloVoisins\Skill', 'id_skill2', 'id');
 	}
 			
 	/**
@@ -69,7 +69,7 @@ class Transaction extends Model
 	 */
 	public function messages()
 	{
-			return $this->hasMany('App\Message', 'id_transaction', 'id');
+			return $this->hasMany('HelloVoisins\Message', 'id_transaction', 'id');
 	}
 			
 }

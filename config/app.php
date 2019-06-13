@@ -169,11 +169,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        HelloVoisins\Providers\AppServiceProvider::class,
+        HelloVoisins\Providers\AuthServiceProvider::class,
+        // HelloVoisins\Providers\BroadcastServiceProvider::class,
+        HelloVoisins\Providers\EventServiceProvider::class,
+        HelloVoisins\Providers\RouteServiceProvider::class,
 		Collective\Html\HtmlServiceProvider::class,
 
     ],
