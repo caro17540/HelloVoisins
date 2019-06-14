@@ -22,7 +22,8 @@ class CreateTransactionTable extends Migration
 			$table->string('status1', 5);
 			$table->string('status2', 5);
 			$table->string('status', 5);
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
     }
 
