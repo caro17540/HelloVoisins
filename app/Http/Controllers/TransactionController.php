@@ -3,6 +3,7 @@
 namespace HelloVoisins\Http\Controllers;
 
 use Illuminate\Http\Request;
+use HelloVoisins\Transaction;
 
 class TransactionController extends Controller
 {
@@ -18,7 +19,9 @@ class TransactionController extends Controller
 	
 	public function list()
 	{
-		//
+		$mestransactions = Transaction::all();
+	
+		return view('transactions_list', ['transactions' => $mestransactions] );
 	}
 	
 	public function read($n)
