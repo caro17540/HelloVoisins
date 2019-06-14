@@ -14,9 +14,8 @@ class UpdateUsersCreateAdresses extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            //
 			$table->string('street');
-			$table->integer('zipcode', 5);
+			$table->integer('zipcode')->length(5);
 			$table->string('country');
         });
     }
