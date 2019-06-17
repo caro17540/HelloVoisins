@@ -3,6 +3,7 @@
 namespace HelloVoisins\Http\Controllers;
 
 use Illuminate\Http\Request;
+use HelloVoisins\Skill;
 
 class SkillController extends Controller
 {
@@ -18,7 +19,8 @@ class SkillController extends Controller
 	
     public function list()
 	{
-		//
+		$skills=Skill::all();
+		return view('skills_list', ['skills'=>$skills]);
 	}
 	
 	public function form()
