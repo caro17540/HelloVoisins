@@ -1,0 +1,50 @@
+/**********************
+*Police
+**********************/
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+/**********************
+*Home.blade
+**********************/
+
+.presentation{
+    background-color:rgb(3, 95, 178);
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-bottom:20px;
+   
+}
+
+.slogan, .citation{
+    color:white;
+    text-align: center;
+}
+
+h2{
+    font-size:3em;
+}
+
+blockquote{
+    font-size:0.5em;
+}
+
+span.citation{
+    font-style:italic; 
+    font-size:0.45em;
+}
+
+.resume{
+    color:rgb(241, 82, 49);
+    font-size:1.5em;
+    font-family: 'Lobster', cursive;
+}
+/*************************
+*App.blade
+*************************/
+
+body{
+    background: url(images/city2.png) 0 0 no-repeat;
+ 
+    background-position:center top;
+    z-index:-1;
+}
