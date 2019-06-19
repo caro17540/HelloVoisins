@@ -23,9 +23,9 @@ class SkillController extends Controller
 		return view('skills_list', ['skills'=>$skills]);
 	}
 	
-	public function form()
+	public function getForm()
 	{
-		//
+		return view('skill_form');
 	}
 	
 	public function updateForm($n)

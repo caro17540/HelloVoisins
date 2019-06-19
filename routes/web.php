@@ -24,11 +24,13 @@ Route::get('/account', 'AccountController@form')->name('account');
 Route::post('/account', 'AccountController@update');
 Route::get('/account/delete', 'AccountController@delete')->name('account_delete');
 Route::get('/users', 'UserController@list');
+Route::get('/users', 'UserController@filter')->name('users_filter');
 Route::get('/user/{n}', 'UserController@read')->where('n','[0-9]+');
 Route::get('/transactions', 'TransactionController@list');
 Route::get('/transaction/{n}', 'TransactionController@read')->where('n','[0-9]+');
 Route::get('/skills', 'SkillController@list')->name('skills');
-Route::get('/skill/create', 'SkillController@form');
+Route::get('/skill/create', 'SkillController@getform')->name('skill_create');
+Route::post('/skill/create', 'SkillController@postform')->name('skill_create');
 Route::get('/skill/update/{n}', 'SkillController@updateForm')->where('n','[0-9]+');
 Route::post('/skill/update/{n}', 'SkillController@update')->where('n','[0-9]+');
 
