@@ -19,7 +19,7 @@
             
             <button><a href="/register">Inscris-toi !</a></button>
             
-            <p class="dejainscrit">Déjà inscrit ? <a href="/login">Connecte-toi !</a></p>
+            <p class="dejainscrit">Déjà inscrit ? <a class="connect" href="/login">Connecte-toi !</a></p>
         </div>
     </div>
 </div>
