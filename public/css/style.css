@@ -1,7 +1,3 @@
-/***********************
-*Rubberband
-***********************/
-
 /**********************
 *Police
 **********************/
@@ -13,7 +9,6 @@
 .presentation{
     padding-top:10px;
     padding-bottom:10px;
-    
     font-family: 'Quicksand', sans-serif;
    
 }
@@ -40,7 +35,7 @@ span.citation{
 
 .resume, .connexion{
     color:rgb(241, 82, 49);
-    font-size:1.5em;
+    font-size:1.4em;
     font-family: 'Lobster', cursive;
 }
 
@@ -91,7 +86,27 @@ button, .btn-secondary{
 
 }
 
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
+}
+figcaption{
+    color:rgb(3, 95, 178);
+    font-family: 'Lobster', cursive;
+    font-size:1em;
+    text-align: center;
+}
+
+figure{
+    margin-top:20px;
+    margin-bottom:30px;
+}
+
+.surligne{
+    color:rgb(3, 95, 178);
+}
 /*************************
 *App.blade
 *************************/
@@ -99,10 +114,12 @@ body{
 	background:url(images/city2.png) bottom;
     background-attachment: fixed, scroll;
     background-repeat: no-repeat, repeat-y;
+    background-size: 100%;
 }
 
 main{
    margin-top:30px;
+   margin-bottom:220px;
 }
 
 nav{
@@ -110,6 +127,7 @@ nav{
     box-shadow:  6px 6px 6px grey;
     font-family: 'Quicksand', sans-serif;
 }
+
 
 a.hello{
     color:white;
