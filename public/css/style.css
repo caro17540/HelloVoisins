@@ -9,8 +9,8 @@
 
 .presentation{
     background-color:rgb(3, 95, 178);
-    padding-top:20px;
-    padding-bottom:20px;
+    padding-top:10px;
+    padding-bottom:10px;
     margin-bottom:20px;
     font-family: 'Quicksand', sans-serif;
    
@@ -22,7 +22,7 @@
 }
 
 h2{
-    font-size:3em;
+    font-size:2.5em;
 }
 
 blockquote{
@@ -44,41 +44,99 @@ a{
     color:white;
     font-family: 'Quicksand', sans-serif;
     text-decoration: none;
-    font-size:0.8em;
-    
-    
+    font-size:0.7em;
 }
 
 a.connect{
     color:rgb(241, 82, 49);
 }
-a:hover{
+a.connect:hover{
     text-decoration: none;
     color:rgb(3, 95, 178);
 }
+
+a.inscris, .btn-link{
+    text-decoration: none;
+}
+
+a.inscris:hover{
+    color:white;
+}
+
 
 .dejainscrit{
     color:rgb(3, 95, 178);
     padding-top:10px;
 }
 
-button{
+button, .btn-secondary{
     background-color:rgb(241, 82, 49);
     border:none;
-    
-    padding-right:10px;
-    padding-left:10px;
+    border-radius:5px;
+    padding-right:5px;
+    padding-left:5px;
+    padding-bottom:5px;
+    margin-bottom: 10px;
 }
 /*************************
 *App.blade
 *************************/
 body{
 	background:url(images/city2.png) bottom;
-	height:100px;
-	width:100%;
-    position: relative;
+    background-attachment: fixed, scroll;
+  background-repeat: no-repeat, repeat-y;
 }
 
 main{
-   margin:0;
+   margin-top:30px;
+}
+
+/**********************
+*account_form.blade
+**********************/
+
+.formulaire{
+    font-family: 'Quicksand', sans-serif;
+    margin-top:20px;
+    background-color:rgba(241, 82, 49, 0.3);
+    border-radius:10px;
+    padding:20px;
+}
+
+legend{
+    font-family: 'Lobster', cursive;
+
+}
+
+legend, input, fieldset{
+    color:rgb(3, 95, 178);
+}
+
+label{
+    color:rgb(241, 82, 49);
+}
+
+.btn-primary{
+    background-color:rgb(3, 95, 178);
+    border:none;
+}
+
+.btn-primary:hover{
+    background-color: rgb(241, 82, 49);
+}
+
+.btn-secondary:hover{
+    background-color:rgb(3, 95, 178);
+}
+
+/***********************
+*login.blade
+***********************/
+.btn-link:hover{
+    text-decoration:none;
+    color:rgb(241, 82, 49);
+}
+
+form{
+    border:none;
 }

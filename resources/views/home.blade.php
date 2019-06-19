@@ -17,9 +17,9 @@
             <p>Aujourd'hui, il y a {{ $user_count }} voisins inscrits dans toute la France.
             <br>Si tu veux savoir combien habitent tout près de chez toi, rejoins-nous !</p>
             
-            <button><a href="/register">Inscris-toi !</a></button>
+            <button class="btn-primary"><a class="inscris" href="/register">Inscris-toi ;-)</a></button>
             
-            <p class="dejainscrit">Déjà inscrit ? <a class="connect" href="/login">Connecte-toi !</a></p>
+            <p class="dejainscrit">Déjà inscrit ? <a class="connect" href="/login">Connecte-toi ;-)</a></p>
         </div>
     </div>
 </div>

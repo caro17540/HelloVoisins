@@ -87,6 +87,5 @@
         <main class="py-6">
             @yield('content')
         </main>
-    
 </body>
 </html>
