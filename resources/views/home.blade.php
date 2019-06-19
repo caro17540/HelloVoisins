@@ -13,12 +13,13 @@
             <br>Pas d'argent, ni de temps, juste aider son prochain! (son voisin...;-)</p>
         </div>
     
-        <div class="col-md-6">
+        <div class="connexion col-md-6">
             <p>Aujourd'hui, il y a {{ $user_count }} voisins inscrits dans toute la France.
             <br>Si tu veux savoir combien habitent tout près de chez toi, rejoins-nous !</p>
             
             <button><a href="/register">Inscris-toi !</a></button>
-            <p>Déjà inscrit ? <a href="/login">Connecte-toi !</a></p>
+            
+            <p class="dejainscrit">Déjà inscrit ? <a href="/login">Connecte-toi !</a></p>
         </div>
     </div>
 </div>
