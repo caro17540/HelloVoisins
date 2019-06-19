@@ -32,7 +32,7 @@ class UpdateUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
-			 $table->renameColumn('name', 'login');
+			 $table->renameColumn('login', 'name');
 			 $table->dropColumn(['firstname','lastname','description','role']);
         });
     }

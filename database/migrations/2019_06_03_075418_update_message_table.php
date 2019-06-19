@@ -31,6 +31,9 @@ class UpdateMessageTable extends Migration
     public function down()
     {
         Schema::table('message', function (Blueprint $table) {
+            //$table->unsignedBigInteger('id_transaction')->bigInteger()->change();
+            //$table->unsignedBigInteger('id_sender')->bigInteger()->change();
+            //$table->unsignedBigInteger('id_receiver')->bigInteger()->change();
             $table->dropForeign(['id_transaction']);
             $table->dropForeign(['id_sender']);
             $table->dropForeign(['id_receiver']);

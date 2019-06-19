@@ -15,8 +15,8 @@ class UpdateUsersCreateAdresses extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
 			$table->string('street');
-			$table->integer('zipcode')->length(5);
-			$table->string('country');
+			$table->string('zipcode', 5);
+			$table->string('city');
         });
     }
 
@@ -28,7 +28,7 @@ class UpdateUsersCreateAdresses extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('country');
+            $table->dropColumn('city');
             $table->dropColumn('zipcode');
             $table->dropColumn('street');
         });

@@ -1,0 +1,84 @@
+/**********************
+*Police
+**********************/
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700&display=swap');
+/**********************
+*Home.blade
+**********************/
+
+.presentation{
+    background-color:rgb(3, 95, 178);
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-bottom:20px;
+    font-family: 'Quicksand', sans-serif;
+   
+}
+
+.slogan, .citation{
+    color:white;
+    text-align: center;
+}
+
+h2{
+    font-size:3em;
+}
+
+blockquote{
+    font-size:0.5em;
+}
+
+span.citation{
+    font-style:italic; 
+    font-size:0.45em;
+}
+
+.resume, .connexion{
+    color:rgb(241, 82, 49);
+    font-size:1.5em;
+    font-family: 'Lobster', cursive;
+}
+
+a{
+    color:white;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    font-size:0.8em;
+    
+    
+}
+
+a.connect{
+    color:rgb(241, 82, 49);
+}
+a:hover{
+    text-decoration: none;
+    color:rgb(3, 95, 178);
+}
+
+.dejainscrit{
+    color:rgb(3, 95, 178);
+    padding-top:10px;
+}
+
+button{
+    background-color:rgb(241, 82, 49);
+    border:none;
+    
+    padding-right:10px;
+    padding-left:10px;
+}
+/*************************
+*App.blade
+*************************/
+body{
+	background:url(images/city2.png) bottom;
+	height:100px;
+	width:100%;
+    position: relative;
+}
+
+main{
+   margin:0;
+}

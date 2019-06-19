@@ -14,10 +14,10 @@ class UpdateTransactionTable extends Migration
     public function up()
     {
         Schema::table('transaction', function (Blueprint $table) {
-			$table->BigInteger('id_user1')->unsigned()->change();
-			$table->BigInteger('id_user2')->unsigned()->change();
-			$table->BigInteger('id_skill1')->unsigned()->change();
-			$table->BigInteger('id_skill2')->unsigned()->change();
+			$table->bigInteger('id_user1')->unsigned()->change();
+			$table->bigInteger('id_user2')->unsigned()->change();
+			$table->bigInteger('id_skill1')->unsigned()->change();
+			$table->bigInteger('id_skill2')->unsigned()->change();
             $table->foreign('id_user1')->references('id')->on('users');
 			$table->foreign('id_user2')->references('id')->on('users');
 			$table->foreign('id_skill1')->references('id')->on('skill');
