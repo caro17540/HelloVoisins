@@ -1,3 +1,7 @@
+/***********************
+*Rubberband
+***********************/
+
 /**********************
 *Police
 **********************/
@@ -7,30 +11,31 @@
 *Home.blade
 **********************/
 .presentation{
-    background-color:rgb(3, 95, 178);
     padding-top:10px;
     padding-bottom:10px;
-    margin-bottom:20px;
+    
     font-family: 'Quicksand', sans-serif;
    
 }
 
 .slogan, .citation{
-    color:white;
     text-align: center;
 }
 
 h2{
     font-size:2.5em;
+    color:rgb(3, 95, 178);
 }
 
 blockquote{
     font-size:0.5em;
+    color:rgb(3, 95, 178);
 }
 
 span.citation{
     font-style:italic; 
-    font-size:0.45em;
+    font-size:0.6em;
+    color:rgb(3, 95, 178);
 }
 
 .resume, .connexion{
@@ -52,6 +57,7 @@ a:hover{
 
 a.connect{
     color:rgb(241, 82, 49);
+    font-size:0.7em;
 }
 a.connect:hover{
     text-decoration: none;
@@ -60,6 +66,7 @@ a.connect:hover{
 
 a.inscris, .btn-link{
     text-decoration: none;
+    font-size:0.7em;
 }
 
 a.inscris:hover{
@@ -80,20 +87,40 @@ button, .btn-secondary{
     padding-left:5px;
     padding-bottom:5px;
     margin-bottom: 10px;
+    box-shadow: 6px 6px 6px grey;
+
 }
+
+
 /*************************
 *App.blade
 *************************/
 body{
 	background:url(images/city2.png) bottom;
     background-attachment: fixed, scroll;
-  background-repeat: no-repeat, repeat-y;
+    background-repeat: no-repeat, repeat-y;
 }
 
 main{
    margin-top:30px;
 }
 
+nav{
+    background-color:rgb(241, 82, 49);
+    box-shadow:  6px 6px 6px grey;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a.hello{
+    color:white;
+    
+}
+
+.nav-link{
+    font-family: 'Lobster', cursive;
+    font-size:1.3em;
+    color:white;
+}
 /**********************
 *account_form.blade
 **********************/
