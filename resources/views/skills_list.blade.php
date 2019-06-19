@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <h2>Les Compétences</h2>
-    <div class="table-responsive mb-3">
-        <table class="table table-striped ml-5">
+<div class="container formulaire">
+    <h2 class="competences">Les Compétences</h2>
+    <div class="table-responsive mb-2">
+        <table class="table table-striped">
             <thead>
                 <th>Intitulé</th>
                 <th>Date de création</th>
@@ -12,7 +12,7 @@
             </thead>
             @foreach($skills as $skill)
                 <tr>
-                    <td><a href="/skill/update/{{{ $skill->id }}}">{{{ $skill->title }}}</a></td>
+                    <td><a href="/skill/update/{{{ $skill->id }}}" class="skill">{{{ $skill->title }}}</a></td>
                     <td>{{{ $skill->created_at }}}</td>
                     <td>{{{ $skill->updated_at }}}</td>
                 </tr>

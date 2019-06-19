@@ -6,7 +6,6 @@
 /**********************
 *Home.blade
 **********************/
-
 .presentation{
     background-color:rgb(3, 95, 178);
     padding-top:10px;
@@ -44,7 +43,11 @@ a{
     color:white;
     font-family: 'Quicksand', sans-serif;
     text-decoration: none;
-    font-size:0.7em;
+    font-size:1em;
+}
+
+a:hover{
+    text-decoration:none;
 }
 
 a.connect{
@@ -101,6 +104,7 @@ main{
     background-color:rgba(241, 82, 49, 0.3);
     border-radius:10px;
     padding:20px;
+    margin-bottom:100px;
 }
 
 legend{
@@ -139,4 +143,29 @@ label{
 
 form{
     border:none;
+}
+
+/*************************
+*skill_list.blade
+*************************/
+
+a.skill{
+    color:rgb(3, 95, 178);
+}
+
+a.skill:hover{
+    color:rgb(241, 82, 49);
+}
+
+.competences, th{
+    font-family: 'Lobster', cursive;
+    color:rgb(3, 95, 178);
+}
+
+th{
+    font-size:1.5em;
+}
+
+td{
+    color:rgb(241, 82, 49);
 }
