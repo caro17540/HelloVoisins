@@ -17,11 +17,17 @@ class UserController extends Controller
 	}
 	
     public function list(){
-			
+		return view ('user_list');
+				
 	}
 
 	public function read($n){
-		
+			return view ('user_read');	
 	}
+	public function index()
+    {
+        $user = User::all();
+        return view('users', ['user' => $user ]);
+    }
 	
 }
