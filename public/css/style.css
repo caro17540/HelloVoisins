@@ -13,13 +13,19 @@
    
 }
 
-.slogan, .citation{
+.slogan, .citation, h3{
     text-align: center;
 }
 
 h2{
     font-size:2.5em;
-    color:rgb(3, 95, 178);
+    color:rgb(241, 82, 49);
+}
+
+h3{
+    padding-bottom:20px;
+    padding-top:20px;
+    color: rgb(241, 82, 49);
 }
 
 blockquote{
@@ -68,10 +74,9 @@ a.inscris:hover{
     color:white;
 }
 
-
 .dejainscrit{
     color:rgb(3, 95, 178);
-    padding-top:10px;
+    padding-top:5px;
 }
 
 button, .btn-secondary{
@@ -86,57 +91,60 @@ button, .btn-secondary{
 
 }
 
-p.skills{
-    color:rgb(3, 95, 178);
-    font-family: 'Lobster', cursive;
-    font-size:1em;
-}
 
 .surligne{
     color:rgb(3, 95, 178);
 }
 
-.col-md-2{
-    margin:0;
-    padding:10px;
-    background-color: rgba(241, 82, 49, 0.3);
+li{
+    float:left;
+    list-style: none;
+    padding-right:20px;
+    padding-left:20px;
+    text-align:center;
+    vertical-align:top;
 }
 
+.competences{
+    background-color: rgba(3, 95, 178, 0.2);
+    display:flex;
+    justify-content: space-around;
+    padding-top:20px;
+}
 
 img{
-    padding-right:5px;
-    float:left;
-    
+    height:30px;
+    width:auto;
 }
 
-.border1{
-    border-radius:5px 0px 0px 5px;
-}
-
-.border2{
-    border-radius:0px 5px 5px 0px;
-}
 /*************************
 *App.blade
 *************************/
 body{
 	background:url(images/city3.png) bottom;
-    background-attachment: fixed, scroll;
+    background-attachment:scroll;
     background-repeat: no-repeat, repeat-y;
     background-size: 100%;
 }
 
 main{
-   margin-top:30px;
-   margin-bottom:220px;
+   margin-top:80px;
+   margin-bottom:250px;
 }
 
 nav{
-    background-color:rgb(241, 82, 49);
+    background-color:rgb(3, 95, 178);
     box-shadow:  6px 6px 6px grey;
     font-family: 'Quicksand', sans-serif;
+
 }
 
+.fixed{
+    position:fixed;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index:2;
+}
 
 a.hello{
     color:white;
@@ -155,7 +163,7 @@ a.hello{
 .formulaire{
     font-family: 'Quicksand', sans-serif;
     margin-top:20px;
-    background-color:rgba(241, 82, 49, 0.3);
+    background-color:rgba(3, 95, 178, 0.2);
     border-radius:10px;
     padding:20px;
     margin-bottom:100px;
@@ -211,7 +219,7 @@ a.skill:hover{
     color:rgb(241, 82, 49);
 }
 
-.competences, th{
+.skills, th{
     font-family: 'Lobster', cursive;
     color:rgb(3, 95, 178);
 }

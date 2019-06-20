@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container formulaire">
-    <h2 class="competences">Les Compétences</h2>
+    <h2 class="skills">Les Compétences</h2>
     <div class="table-responsive mb-2">
         <table class="table table-striped">
             <thead>

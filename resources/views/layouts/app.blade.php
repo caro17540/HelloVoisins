@@ -23,6 +23,7 @@
 
 <body>
     <div id="app">
+        <div class="fixed">
         <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container">
                 <a class="navbar-brand hello" href="{{ url('/') }}">
@@ -81,7 +82,7 @@
                 </div>
             </div>
         </nav>
-
+</div>
 </div>
 
         <main class="py-6">
