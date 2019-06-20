@@ -86,32 +86,41 @@ button, .btn-secondary{
 
 }
 
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-figcaption{
+p.skills{
     color:rgb(3, 95, 178);
     font-family: 'Lobster', cursive;
     font-size:1em;
-    text-align: center;
-}
-
-figure{
-    margin-top:20px;
-    margin-bottom:30px;
 }
 
 .surligne{
     color:rgb(3, 95, 178);
 }
+
+.col-md-2{
+    margin:0;
+    padding:10px;
+    background-color: rgba(241, 82, 49, 0.3);
+}
+
+
+img{
+    padding-right:5px;
+    float:left;
+    
+}
+
+.border1{
+    border-radius:5px 0px 0px 5px;
+}
+
+.border2{
+    border-radius:0px 5px 5px 0px;
+}
 /*************************
 *App.blade
 *************************/
 body{
-	background:url(images/city2.png) bottom;
+	background:url(images/city3.png) bottom;
     background-attachment: fixed, scroll;
     background-repeat: no-repeat, repeat-y;
     background-size: 100%;
