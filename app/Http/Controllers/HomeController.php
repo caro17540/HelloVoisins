@@ -3,7 +3,7 @@
 namespace HelloVoisins\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use HelloVoisins\Http\Controllers\Controller;
 use HelloVoisins\User;
 
 class HomeController extends Controller

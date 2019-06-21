@@ -64,7 +64,8 @@ class User extends Authenticatable
 	public function skills(){
 		
 		return $this->belongsToMany('HelloVoisins\Skill','user_skill','id_user','id_skill');
-		
+        //return $this->belongsToMany('HelloVoisins\Skill');
+        
 	}
 	
 	

@@ -4,7 +4,7 @@
 <div class="container">
     <h2 class="mb-5">Nouvelle Compétence</h2>
 
-    <form class="form-horizontal" method="GET" action="{{ route('register') }}">
+    <form class="form-horizontal" method="POST" action="{{ route('skill_insert') }}">
         @csrf
 
         <div class="form-group row mb-5">
