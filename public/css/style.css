@@ -248,3 +248,25 @@ a.user:hover{
     font-family: 'Lobster', cursive;
     color:rgb(3, 95, 178);
 }
+
+/*************************
+*skill_create.blade
+*************************/
+
+.skillcreate {
+    margin-bottom:120px;
+}
+
+.formskillcreate {
+    font-family: 'Quicksand', sans-serif;
+    margin-top:20px;
+    background-color:rgba(3, 95, 178, 0.2);
+    border-radius:10px;
+    padding:20px;
+    margin-bottom: 100px;
+}
+
+.titreskillcreate {
+    font-family: 'Lobster', cursive;
+    color:rgb(3, 95, 178);
+}

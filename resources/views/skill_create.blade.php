@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <h2 class="mb-5">Nouvelle Compétence</h2>
+<div class="container formskillcreate">
+    <h2 class="mb-5 titreskillcreate">Nouvelle Compétence</h2>
 
     <form class="form-horizontal" method="POST" action="{{ route('skill_insert') }}">
         @csrf
 
         <div class="form-group row mb-5">
-            <label for="title" class="col-md-2 col-form-label">{{ __('Intitulé') }}</label>
+            <label for="title" class="col-md-2 col-form-label text-md-right">{{ __('Intitulé') }}</label>
 
             <div class="col-md-10">
                 <input id="title" type="text" class="form-control @error('title') is-invalid @enderror" name="title" required autocomplete="title" autofocus>
@@ -21,7 +21,7 @@
             </div>
         </div>
 
-        <div class="form-group row mb-0">
+        <div class="form-group skillcreate row">
             <div class="col-md-2 col-sm-2">
                 <a href="{{ route('skills') }}">
                     <button class="btn btn-secondary">

@@ -23,12 +23,22 @@ class SkillController extends Controller
 		return view('skills_list', ['skills'=>$skills]);
 	}
 	
-	public function getForm()
+	/**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return view('skill_create');
+    }
+
+	public function insert()
 	{
-		return view('skill_form');
+		return view('skill_create');
 	}
 	
-	public function updateForm($n)
+	public function edit($n)
 	{
 		//
 	}
