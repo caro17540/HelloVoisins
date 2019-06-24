@@ -29,11 +29,12 @@ class UserController extends Controller
     public function filter()
     {
 		$users = User::all();
-        return view('user_list', ['users' => $users ]);
+        $skills = Skill::all();
+        return view('user_list', ['users' => $users , 'skills' => $skills ]);
 				
 	}
 
 	public function read($n){
-			return view ('user_read');	
+		return view ('user_read');	
 	}
 }

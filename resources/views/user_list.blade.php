@@ -9,7 +9,7 @@
 			<select name="skillTitle" id="skillTitle" >
 				@foreach($skills as $skill)
 					<option value="{{ $skill->title }}" 
-						@if ($skill->title == old('skillTitle', $model->option))
+						@if ($skill->title == old('skillTitle', $skill->option))
 							selected="selected"
 						@endif
 						>{{ $skill->title }}
