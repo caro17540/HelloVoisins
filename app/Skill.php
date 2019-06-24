@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Skill extends Model
 {
+	
     /**
 	* the table associated with the model
 	* @var string
@@ -26,12 +27,12 @@ class Skill extends Model
 	
 	public function transaction1() {
 		
-		return $this->hasMany('HelloVoisins\Transaction','id_skill1');
+		return $this->hasMany('HelloVoisins\Transaction', 'id_skill1');
 	}
 	
 	public function transaction2() {
 		
-		return $this->hasMany('HelloVoisins\Transaction','id_skill2');
+		return $this->hasMany('HelloVoisins\Transaction', 'id_skill2');
 	}
 	
 	public function users() {
