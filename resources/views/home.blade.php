@@ -47,12 +47,41 @@
                 </li>
                 <li class="skills">
                     <figure>
+                        <img src="images/entretienauto.png" alt="entretien">
+                    </figure>
+                </li>
+                <li class="skills">
+                    <figure>
                         <img src="images/demenagement.png" alt="demenagement">
                     </figure>
                 </li>
                 <li class="skills">
                     <figure>
+                        <img src="images/menage.png" alt="menage">
+                    </figure>
+                </li>
+                <li class="skills">
+                    <figure>
+                        <img src="images/repassage.png" alt="repassage">
+                    </figure>
+                </li>
+                <li class="skills">
+                    <figure>
+                        <img src="images/courses.png" alt="courses">
+                    </figure>
+                </li><li class="skills">
+                    <figure>
+                        <img src="images/cuisine.png" alt="cuisine">
+                    </figure>
+                </li>
+                <li class="skills">
+                    <figure>
                         <img src="images/gardeenfants.png" alt="enfants">
+                    </figure>
+                </li>
+                <li class="skills">
+                    <figure>
+                        <img src="images/scolaire.png" alt="scolaire">
                     </figure>
                 </li>
                 <li class="skills">
@@ -67,38 +96,7 @@
                 </li>
                 <li class="skills">
                     <figure>
-                        <img src="images/toilettage.png" alt="toilettage">
-                    </figure>
-                </li>
-            </ul>
-        </div>
-    </div>   
-    <div class="row">
-        <div class=" col-md-12 icones">
-            <ul class="contenu">
-                <li class="skills">
-                    <figure>
-                        <img src="images/gardeanimaux.png" alt="animaux">
-                    </figure>
-                </li>
-                <li class="skills">
-                    <figure>
-                        <img src="images/menage.png" alt="menage">
-                    </figure>
-                </li>
-                <li class="skills">
-                    <figure>
-                        <img src="images/cuisine.png" alt="cuisine">
-                    </figure>
-                </li>
-                <li class="skills">
-                    <figure>
-                        <img src="images/repassage.png" alt="repassage">
-                    </figure>
-                </li>
-                <li class="skills">
-                    <figure>
-                        <img src="images/entretienauto.png" alt="entretien">
+                        <img src="images/informatique.png" alt="informatique">
                     </figure>
                 </li>
                 <li class="skills">
@@ -113,14 +111,13 @@
                 </li>
                 <li class="skills">
                     <figure>
-                        <img src="images/scolaire.png" alt="scolaire">
+                        <img src="images/demarchesadministratives.png" alt="administratifs">
                     </figure>
                 </li>
                 <li class="skills">
                     <figure>
-                        <img src="images/courses.png" alt="courses">
+                        <img src="images/fete.png" alt="fete">
                     </figure>
-                </li>
                 <li class="skills">
                     <figure>
                         <img src="images/visitecourtoisie.png" alt="visite">
@@ -133,23 +130,10 @@
                 </li>
                 <li class="skills">
                     <figure>
-                        <img src="images/informatique.png" alt="informatique">
+                        <img src="images/gardeanimaux.png" alt="animaux">
                     </figure>
                 </li>
-                <li class="skills">
-                    <figure>
-                        <img src="images/redactiondocs.png" alt="redaction">
-                    </figure>
-                </li>
-                <li class="skills">
-                    <figure>
-                        <img src="images/demarchesadministratives.png" alt="administratifs">
-                    </figure>
-                </li>
-                <li class="skills">
-                    <figure>
-                        <img src="images/fete.png" alt="fete">
-                    </figure>
+                
                 </li>
             </ul>
         </div>

@@ -7,8 +7,8 @@
 *Home.blade
 **********************/
 .presentation{
-    padding-top:10px;
-    padding-bottom:10px;
+    padding-top:0px;
+    padding-bottom:0px;
     font-family: 'Quicksand', sans-serif;
    
 }
@@ -18,13 +18,13 @@
 }
 
 h2{
-    font-size:2.5em;
+    font-size:2.2em;
     color:rgb(241, 82, 49);
 }
 
 h3{
-    padding-bottom:20px;
-    padding-top:20px;
+    padding-bottom:15px;
+    padding-top:10px;
     color: rgb(241, 82, 49);
 }
 
@@ -99,8 +99,8 @@ button, .btn-secondary{
 li{
     float:left;
     list-style: none;
-    padding-right:20px;
-    padding-left:20px;
+    padding-right:10px;
+    padding-left:10px;
     text-align:center;
     vertical-align:top;
 }
@@ -108,7 +108,7 @@ li{
 .competences{
     background-color: rgba(3, 95, 178, 0.2);
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
     padding-top:20px;
 }
 
@@ -129,7 +129,7 @@ body{
 
 main{
    margin-top:80px;
-   margin-bottom:250px;
+   margin-bottom:225px;
 }
 
 nav{
