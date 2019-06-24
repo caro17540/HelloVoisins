@@ -37,7 +37,8 @@ class Skill extends Model
 	
 	public function users() {
 		
-		return $this->belongsToMany('HelloVoisins\User', 'user_skill', 'id_skill', 'id_user');
+		//return $this->belongsToMany('HelloVoisins\User', 'user_skill', 'id_skill', 'id_user');
+		return $this->belongsToMany('HelloVoisins\User');
 	}
 	
 }

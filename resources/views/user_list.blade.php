@@ -3,16 +3,13 @@
 @section('content')
 <div class="container">
 	<h2>Vos voisins</h2>
-	<form class="form-horizontal" method="GET" action="{{ route('users_filter') }}">
+	<form class="form-horizontal" method="GET" action="{{ route('users_list') }}">
         <div class="form-group row mb-5">
             <label for="skillTitle" class="col-md-2 col-form-label">{{ __('Compétence') }}</label>
 			<select name="skillTitle" id="skillTitle" >
 				@foreach($skills as $skill)
-					<option value="{{ $skill->title }}" 
-						@if ($skill->title == old('skillTitle', $skill->option))
-							selected="selected"
-						@endif
-						>{{ $skill->title }}
+					<option value="{{ $skill->title }}" >
+						{{ $skill->title }}
 					</option>
 				@endforeach
 			</select>
@@ -40,7 +37,7 @@
                     <td>{{{ $user->firstname }}}</td>
 					<td>{{ $user->street }} {{ $user->zipcode }} {{ $user->city }}</td>
 					<td>{{{ $user->created_at }}}</td>
-					<td>{{{ $user->skill }}}</td>
+					<td>{{{ $user->skills[0]->title }}}</td>
 					<td>{{{ $user->description }}}</td>
                 </tr>
             @endforeach
