@@ -67,8 +67,10 @@ class UserRepository
 
     public static function getWithSkillsForSkill($skill)
     {
-        return self::queryWithSkills()
-        ->whereHas('skill', function($q) use ($skill)
+        //return self::queryWithSkills()
+        $usersList = User::orderBy('users.created_at', 'desc');
+        return $usersList
+        ->whereHas('skills', function($q) use ($skill)
         {
             $q->where('skill.title', $skill);
         })

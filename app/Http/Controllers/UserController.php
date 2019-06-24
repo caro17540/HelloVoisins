@@ -47,7 +47,7 @@ class UserController extends Controller
         else {
             $users = UserRepository::queryWithSkills();
         }
-        $skills = Skill::all();
+        $skills = Skill::orderBy('skill.title', 'asc')->get();
         return view('user_list', ['users' => $users , 'skills' => $skills ]);
     }
 

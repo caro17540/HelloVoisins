@@ -2,11 +2,12 @@
 
 @section('content')
 <div class="container">
-	<h2>Vos voisins</h2>
+	<h2 class="voisins">Vos voisins</h2>
 	<form class="form-horizontal" method="GET" action="{{ route('users_list') }}">
         <div class="form-group row mb-5">
             <label for="skillTitle" class="col-md-2 col-form-label">{{ __('Compétence') }}</label>
 			<select name="skillTitle" id="skillTitle" >
+				<option value="">---</option>
 				@foreach($skills as $skill)
 					<option value="{{ $skill->title }}" >
 						{{ $skill->title }}
@@ -17,12 +18,17 @@
 				<button type="submit" class="btn btn-primary">
                     {{ __('Filtrer') }}
                 </button>
+			</div>
+			<div class="col-md-2">
+				<a href="{{ route('users_list') }}">
+                	<button class="btn btn-secondary">{{ __('Réinitialiser') }}</button>
+            	</a>
             </div>
 		</div>
 	</form>
 
 	<div class="table-responsive mb-3">
-        <table class="table table-striped ml-5">
+        <table class="table table-striped">
             <thead>
                 <th>Nom</th>
                 <th>Prénom</th>
@@ -33,7 +39,7 @@
             </thead>
             @foreach($users as $user)
                 <tr>
-                    <td><a href="/user/{{{ $user->id }}}">{{{ $user->lastname }}}</a></td>
+                    <td><a href="/user/{{{ $user->id }}}" class="user">{{{ $user->lastname }}}</a></td>
                     <td>{{{ $user->firstname }}}</td>
 					<td>{{ $user->street }} {{ $user->zipcode }} {{ $user->city }}</td>
 					<td>{{{ $user->created_at }}}</td>

@@ -231,3 +231,20 @@ th{
 td{
     color:rgb(241, 82, 49);
 }
+
+/*************************
+*user_list.blade
+*************************/
+
+a.user{
+    color:rgb(3, 95, 178);
+}
+
+a.user:hover{
+    color:rgb(241, 82, 49);
+}
+
+.voisins {
+    font-family: 'Lobster', cursive;
+    color:rgb(3, 95, 178);
+}
