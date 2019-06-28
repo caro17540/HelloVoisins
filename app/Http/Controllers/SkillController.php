@@ -19,12 +19,12 @@ class SkillController extends Controller
 	
     public function list()
 	{
-		$skills=Skill::all();
+		$skills = Skill::orderBy('skill.title', 'asc')->get();
 		return view('skills_list', ['skills'=>$skills]);
 	}
 	
 	/**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new skill.
      *
      * @return \Illuminate\Http\Response
      */
@@ -33,18 +33,45 @@ class SkillController extends Controller
         return view('skill_create');
     }
 
-	public function insert()
+	/**
+     * Create a new skill.
+     *
+     * @param  Request $r
+     * @return \HelloVoisins\Skills
+     */
+	public function insert(Request $r)
 	{
-		return view('skill_create');
+		$skill = Skill::create([
+			'title' => $r->title,
+		]);
+		$skill->save();
+		//return view('skills_list');
+		return redirect('skills');
 	}
 	
-	public function edit($n)
+	public function edit($id)
 	{
-		//
+		$skill = Skill::findOrFail($id);
+		return view('skill_edit', ['skill'=>$skill]);
 	}
 	
-	public function update($n)
+	public function update(Request $r, $id)
 	{
-		//
+		$skill = Skill::findOrFail($id)->update([
+			'title' => $r->title
+		]);
+		return redirect('skills');
+	}
+
+	/**
+     * Delete a skill.
+     *
+     * @param  $id
+     * @return \HelloVoisins\skills
+     */
+	public function delete($id)
+	{
+		$skill = Skill::findOrFail($id)->delete();
+		return redirect('skills');
 	}
 }

@@ -155,7 +155,7 @@
         <div class="resume col-md-6">
             <p>Échanger son savoir faire, troquer, quelle bonne idée... 
             <br>Du bricolage contre un cours de cuisine ou de guitare, c'est parfait pour la culture et aussi pour le porte monnaie! 
-            <br>Pas d'argent, ni de temps, juste aider son prochain! (son voisin...;-)</p>
+            <br>Pas d'argent, juste un peu de temps pour aider son voisin!</p>
         </div>
     </div>
 </div>

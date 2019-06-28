@@ -12,7 +12,7 @@
             </thead>
             @foreach($skills as $skill)
                 <tr>
-                    <td><a href="/skill/update/{{{ $skill->id }}}" class="skill">{{{ $skill->title }}}</a></td>
+                    <td><a href="/skill/{{{ $skill->id }}}/edit" class="skill">{{{ $skill->title }}}</a></td>
                     <td>{{{ $skill->created_at }}}</td>
                     <td>{{{ $skill->updated_at }}}</td>
                 </tr>

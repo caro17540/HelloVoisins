@@ -78,9 +78,11 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($n)
+    public function show($id)
     {
-        return view ('user_read');
+        $users = User::findOrFail($id)->get();
+        var_dump($users);
+        return view ('user_show', ['users'=>$users]);
     }
 
     /**

@@ -24,9 +24,7 @@
         <div class="form-group skillcreate row">
             <div class="col-md-2 col-sm-2">
                 <a href="{{ route('skills') }}">
-                    <button class="btn btn-secondary">
-                        {{ __('Annuler') }}
-                    </button>
+                    <input type="button" value="Annuler" class="btn btn-secondary">
                 </a>
             </div>
             <div class="col-md-2 col-sm-2">

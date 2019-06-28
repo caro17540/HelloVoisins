@@ -30,8 +30,7 @@
 	<div class="table-responsive mb-3">
         <table class="table table-striped">
             <thead>
-                <th>Nom</th>
-                <th>Prénom</th>
+                <th>Pseudo</th>
 				<th>Adresse</th>
 				<th>Inscrit depuis le</th>
 				<th>Compétence</th>
@@ -39,8 +38,7 @@
             </thead>
             @foreach($users as $user)
                 <tr>
-                    <td><a href="/user/{{{ $user->id }}}" class="user">{{{ $user->lastname }}}</a></td>
-                    <td>{{{ $user->firstname }}}</td>
+                    <td><a href="/user/{{{ $user->id }}}" class="user">{{{ $user->login }}}</a></td>
 					<td>{{ $user->street }} {{ $user->zipcode }} {{ $user->city }}</td>
 					<td>{{{ $user->created_at }}}</td>
 					<td>{{{ $user->skills[0]->title }}}</td>

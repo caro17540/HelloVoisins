@@ -6,7 +6,8 @@
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
+| routes
+ are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
 */
@@ -38,4 +39,5 @@ Route::get('/skills', 'SkillController@list')->name('skills');
 Route::get('/skill/create', 'SkillController@create')->name('skill_create');
 Route::post('/skill/create', 'SkillController@insert')->name('skill_insert');
 Route::get('/skill/{n}/edit', 'SkillController@edit')->where('n','[0-9]+')->name('skill_edit');
-Route::put('/skill/{n}', 'SkillController@update')->where('n','[0-9]+')->name('skill_update');
+Route::get('/skill/{n}', 'SkillController@update')->where('n','[0-9]+')->name('skill_update');
+Route::get('/skill/delete/{n}', 'SkillController@delete')->name('skill_delete');
