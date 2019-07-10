@@ -16,10 +16,11 @@ class UserController extends Controller
      *
      * @return void
      */
-    public function __construct(UserRepository $userRepository)
+    public function __construct(UserRepository $userRepository, User $user)
     {
         $this->middleware('auth');
         $this->userRepository=$userRepository;
+        $this->user=$user;
 	}
     
     /**
@@ -78,11 +79,13 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($user_id)
     {
-        $users = User::findOrFail($id)->get();
-        var_dump($users);
-        return view ('user_show', ['users'=>$users]);
+        $id = (int)$user_id;
+        $users = User::findOrFail($id)->with('skills')->withCount(['skills'])->get();
+        $id = $id - 1 ;
+        $user = $users[$id];
+        return view ('user_show', ['user'=>$user]);
     }
 
     /**

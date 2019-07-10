@@ -28,5 +28,17 @@ class TransactionController extends Controller
 	{
 		//
 	}
+
+	/**
+     * Show the the new transaction created.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create($id_user , $_GET["skilltitle"])
+    {
+        return view('transaction_edit');
+    }
+
 }
+
 	

@@ -37,13 +37,15 @@
 				<th>Description</th>
             </thead>
             @foreach($users as $user)
-                <tr>
+                @for ($i=0; $i<$user->skills_count; $i++)
+				<tr>
                     <td><a href="/user/{{{ $user->id }}}" class="user">{{{ $user->login }}}</a></td>
 					<td>{{ $user->street }} {{ $user->zipcode }} {{ $user->city }}</td>
 					<td>{{{ $user->created_at }}}</td>
-					<td>{{{ $user->skills[0]->title }}}</td>
+					<td>{{{ $user->skills[$i]->title }}}</td>
 					<td>{{{ $user->description }}}</td>
                 </tr>
+				@endfor
             @endforeach
         </table>
     </div>

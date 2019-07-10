@@ -19,7 +19,7 @@ class UserRepository
      */
     public static function queryWithSkills()
     {
-        return User::orderBy('users.created_at', 'desc')
+        return User::orderBy('users.created_at', 'desc')->withCount(['skills'])
         ->get();
     }
 
